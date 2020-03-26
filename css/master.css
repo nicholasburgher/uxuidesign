@@ -157,14 +157,14 @@ body {
 
 .uxui-heroimg {
   position: absolute;
-  background-image: url('../images/UI-Animation-2.gif');
+  background-image: url('../images/UI_Animation_Blue.gif');
   background-color: var(--dark);
   background-size: 100%;
   width: 450px;
   height: 350px;
   transform: translate(-50%, -47%);
   /*top: -10px;*/
-  background-blend-mode: multiply;
+  /*background-blend-mode: multiply;*/
   border: solid 2px var(--dark);
 }
 
