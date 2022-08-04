@@ -26,20 +26,20 @@ h6 {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: calc(#{$base_unit} * 4.5); //72
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 0.18em;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: calc(#{$base_unit} * 2.25); //36
   text-transform: uppercase;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: calc(#{$base_unit} * 1.5); //24
   text-transform: uppercase;
   font-weight: 800;
   color: $theme_primary;
@@ -65,6 +65,23 @@ h3 {
   h2 {
     font-size: 5vw;
     white-space: nowrap;
+  }
+}
+
+//Articles
+.article-content {
+  color: $theme_primary;
+  h2 {
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    text-align: center;
+    padding-bottom: $base_unit;
+  }
+  p {
+    background: rgba($theme_background, 0.5);
+    padding: $base_unit;
+    margin-bottom: $base_unit;
   }
 }
 

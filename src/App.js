@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
+import HamburgerMenu from "./components/navigation/HamburgerMenu/HamburgerMenu";
 import CoverPage from "./CoverPage";
 import Work from "./Work";
-import BrandedHeader from "./components/BrandedHeader/BrandedHeader";
+import BrandedHeader from "./components/navigation/BrandedHeader/BrandedHeader";
 import WorkPageTemplate from "./templates/WorkPageTemplate";
 
 import work from "./content/work";
@@ -18,9 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<CoverPage />} />
           <Route path="work/*" element={<Work />} />
-          {work.map((workItem) => {
+          {work.map((workItem, index) => {
             return (
-              <Route path={`work/${workItem.path}`} element={<WorkPageTemplate title={workItem.title} />} />
+              <Route path={`work/${workItem.path}`} element={<WorkPageTemplate title={workItem.title} index={index} />} />
             )
           })}
         </Routes>

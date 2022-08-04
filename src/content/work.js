@@ -7,7 +7,25 @@ const work = [
     "path": "wisephone",
     "graphic": "unamed.jpg",
     "content": [
-      
+      {
+        "component": "Title",
+        "content": "Simplifying the modern mobile device"
+      },
+      {
+        "component": "Body",
+        "design": "full-width",
+        "content": "Wisephone is a mobile device that simplifies the user experience to the bare minimum, all the while providing an inviting UI that's clean and to the point."
+      },
+      {
+        "component": "Body",
+        "design": "full-width",
+        "content": "Getting there has been no easy feat. Since the OS is built on a custom version of Android, each app utilizes a handful of pre-built Android components to make up the content."
+      },
+      {
+        "component": "Body",
+        "design": "full-width",
+        "content": "Essentially, we would need to build custom components to replace the existing Android components, so that we gave users a truly unique brand experience."
+      }
     ]
   },
   {
