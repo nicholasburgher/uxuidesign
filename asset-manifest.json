@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/uxuidesign/static/css/main.57eff4a4.css",
-    "main.js": "/uxuidesign/static/js/main.40835d6a.js",
+    "main.css": "/uxuidesign/static/css/main.0fc68c3e.css",
+    "main.js": "/uxuidesign/static/js/main.8ffad4c7.js",
     "index.html": "/uxuidesign/index.html",
-    "main.57eff4a4.css.map": "/uxuidesign/static/css/main.57eff4a4.css.map",
-    "main.40835d6a.js.map": "/uxuidesign/static/js/main.40835d6a.js.map"
+    "main.0fc68c3e.css.map": "/uxuidesign/static/css/main.0fc68c3e.css.map",
+    "main.8ffad4c7.js.map": "/uxuidesign/static/js/main.8ffad4c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.57eff4a4.css",
-    "static/js/main.40835d6a.js"
+    "static/css/main.0fc68c3e.css",
+    "static/js/main.8ffad4c7.js"
   ]
 }
