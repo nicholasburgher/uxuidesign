@@ -4,7 +4,7 @@ function WorkPageTemplate(props) {
   const navigate = useNavigate();
   return (
     <div style={{display: "flex", flexDirection: "row", gap: "8px"}}>
-      <PageTitle content="Work" action={() => {console.log("heading-back"); navigate('work')}}/><PageTitle content={`> ${props.title}`} />
+      <PageTitle content="Work" action={() => {console.log("heading-back"); navigate('../work')}}/><PageTitle content={`> ${props.title}`} />
     </div>
   )
 }
