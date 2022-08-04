@@ -1,0 +1,65 @@
+@import "../../cssVariables.scss";
+
+.HamburgerMenu {
+    color: $theme_background;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    z-index: 1;
+    .icon {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: calc(35px + 24px);
+      padding: 12px;
+      transition: all ease-in-out 200ms;
+  
+      .bar {
+        background: $theme_primary;
+        height: 4px;
+        width: 100%;
+      }
+      &.active {
+        gap: 6px;
+      }
+    }
+  
+    .Nav {
+      position: fixed;
+      background: rgba($theme_accent, .4);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 3px;
+      top: 0px;
+      right: 12px;
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 2px;
+      width: 120px;
+      transition: all ease-in-out 200ms;
+      pointer-events: none;
+      &.active {
+        top: 46px;
+        opacity: 1;
+        pointer-events: all;
+      }
+      a {
+        color: $theme_primary;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding: 8px 4px;
+        border-radius: 3px;
+        &:hover {
+          background: rgba($theme_background,.2);
+        }
+        &.active {
+          font-weight: 600;
+        }
+      }
+    }
+  }

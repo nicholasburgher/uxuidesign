@@ -1,0 +1,16 @@
+@import "../../cssVariables.scss";
+@import "../../cssAnimations.scss";
+
+.pageTitle {
+    //text-transform: uppercase;
+    padding-bottom: 12px;
+    color: rgba($theme_background, .7);
+    font-weight: 400;
+    animation: fadeIn ease-in-out 500ms, slideIn_right ease-in-out 500ms;
+    &.clickable {
+        cursor: pointer;
+        &:hover {
+            color: rgba($theme_background, .4);
+        }
+    }
+}

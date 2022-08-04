@@ -1,49 +1,81 @@
 @import "./cssVariables.scss";
+@import "./cssAnimations.scss";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-body {
-    background: $theme_accent;
-    .App {
-        color: $theme_background;
-    }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    @include txt_default;
+body {
+  background: $theme_accent;
+
+  .App {
+    color: $theme_background;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include txt_default;
 }
 
 h1 {
-    font-size: 72px;
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
+  font-size: 72px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
 }
+
 h2 {
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
+
 h3 {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: $theme_primary;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: $theme_primary;
+}
+
+.content {
+  padding: 64px 24px 0;
 }
 
 .cover-page {
-    height: 100vh;
-    display: grid;
-    place-items: center;
+  height: calc(100vh - 72px);
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  place-items: center;
+  animation: fadeIn ease-in-out 700ms, dropIn ease-in-out 700ms;
+
+  h1 {
+    font-size: 8vw;
+    padding-bottom: 1vw;
+    white-space: nowrap;
+  }
+
+  h2 {
+    font-size: 5vw;
+    white-space: nowrap;
+  }
 }
 
-.HamburgerMenu {
-    color: $theme_background;
-    position: fixed;
-    right: 12px; top: 12px;
-    cursor: pointer;
+@media only screen and (min-width: 768px) {
+  .cover-page {
+    h1 {
+      font-size: 61px;
+    }
+
+    h2 {
+      font-size: 38px;
+    }
+  }
 }

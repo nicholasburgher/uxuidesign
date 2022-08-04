@@ -1,0 +1,23 @@
+@import "../../cssVariables.scss";
+
+.WorkCard {
+    background: rgba($theme_background, .4);
+    border-radius: 6px;
+    padding: 0 16px;
+    cursor: pointer;
+    .title {
+        text-align: center;
+        padding: 32px 0 16px;
+        font-weight: 500;
+    }
+    .skills, .dates {
+        //text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 300;
+        color: $theme_primary;
+        letter-spacing: 0.02em;
+        line-height: 150%;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+}

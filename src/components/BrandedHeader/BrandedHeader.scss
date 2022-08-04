@@ -1,0 +1,13 @@
+@import "../../cssVariables.scss";
+@import "../../cssAnimations.scss";
+
+.Header {
+    position: fixed;
+    padding: 12px;
+    color: $theme_primary;
+    font-weight: 700;
+    font-size: 1.25rem;
+    width: 100vw;
+    background: rgba($theme_background, .4);
+    animation: fadeIn ease-in-out 500ms;
+}

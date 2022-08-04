@@ -1,17 +1,30 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import HamburgerMenu from "./HamburgerMenu";
+import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
+import CoverPage from "./CoverPage";
+import Work from "./Work";
+import BrandedHeader from "./components/BrandedHeader/BrandedHeader";
+import WorkPageTemplate from "./templates/WorkPageTemplate";
+
+import work from "./content/work";
+
 
 function App() {
   return (
     <div className="App">
       <HamburgerMenu />
-     <div class="cover-page">
-       <div style={{textAlign: "center"}}>
-         <h1>UX / UI Designer</h1>
-         <h2>Nicholas Burgher</h2>
-       </div>
-       <h3>Coming Soon</h3>
-     </div>
+      <BrandedHeader />
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<CoverPage />} />
+          <Route path="work/*" element={<Work />} />
+          {work.map((workItem) => {
+            return (
+              <Route path={`work/${workItem.path}`} element={<WorkPageTemplate title={workItem.title} />} />
+            )
+          })}
+        </Routes>
+      </div>
     </div>
   );
 }
